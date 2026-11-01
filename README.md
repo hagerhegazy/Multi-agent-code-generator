@@ -65,7 +65,7 @@ Use one `NAME=value` per line, with no quotes and no spaces around `=`. Never co
 
 ## Usage
 
-1. Open `ds.py` and set your task at the bottom of the file:
+1. Open `Notebook.py` and set your task at the bottom of the file:
 
    ```python
    TASK = ("Build a Python password toolkit that scores password strength with clear reasons, "
@@ -77,7 +77,7 @@ Use one `NAME=value` per line, with no quotes and no spaces around `=`. Never co
 2. Delete the old `output/` folder if you are starting a new task, then run:
 
    ```bash
-   python ds.py
+   python Notebook.py
    ```
 
 3. Run the generated app:
@@ -104,7 +104,7 @@ Use one `NAME=value` per line, with no quotes and no spaces around `=`. Never co
 
 ```
 .
-├── ds.py              # the whole orchestrator
+├── Notebook.py              # the whole orchestrator
 ├── requirements.txt
 ├── .env.example
 ├── assets/            # screenshots
@@ -119,13 +119,5 @@ Use one `NAME=value` per line, with no quotes and no spaces around `=`. Never co
 - **404 or 410 for a model:** the model was retired. List the models available to your key and pick another one.
 - **Empty replies with `finish_reason=length`:** reasoning models can spend all tokens thinking. Use a non-reasoning model or raise `max_tokens`.
 
-## Limitations
-
-- **Generated code runs on your machine.** The probe scripts and the generated tests are executed with `subprocess`. Run the project inside a virtual environment or a container.
-- **The fixer may edit tests.** The prompt forbids weakening tests, but it is allowed to fix a test that is wrong. Review changes before trusting a green result.
-- **Quality depends on the model.** Smaller models need more fix rounds and sometimes fail to converge.
-- **`results.pkl` is a pickle file.** Only load files you created yourself.
-
 ## License
 
-Add your license here.
