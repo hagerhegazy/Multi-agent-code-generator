@@ -5,7 +5,7 @@ A small orchestrator that turns a one-sentence task into a working Python projec
 ![Screenshot 1](assets/screenshot-1.png)
 ![Screenshot 2](assets/screenshot-2.png)
 
-**Demo:** [add your demo link here](https://)
+**Demo:** [DEMO](https://lnkd.in/p/e9fjYi8Y)
 
 ## How it works
 
